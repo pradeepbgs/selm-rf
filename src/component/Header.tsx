@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import selambImage from "../assets/selamb.webp";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {  
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,35 +13,35 @@ const Header = () => {
     <nav className="bg-[#272727] text-white p-4 w-full border-b border-dashed border-gray-100">
       <div className="container mx-auto flex justify-around items-center">
         <NavLink to="/">
-          <img 
-          src={selambImage} 
-          alt="Logo" 
-          className="w-30 h-20" 
+          <img
+            src={selambImage}
+            alt="Logo"
+            className="w-30 h-20"
           />
         </NavLink>
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-        <NavLink to="/about" className="hover:text-blue-400 transition duration-200">
+          <NavLink to="/about" className="hover:text-blue-400 transition duration-200">
             KONTAKTA OSS
           </NavLink>
           <NavLink to="/about" className="hover:text-blue-400 transition duration-200">
             OM OSS
           </NavLink>
           <NavLink to="/contact" className="hover:text-blue-400 transition duration-200">
-							TJANSTER
+            TJANSTER
           </NavLink>
           <NavLink to="/contact" className="hover:text-blue-400 transition duration-200">
-							OFFERT
+            OFFERT
           </NavLink>
-          <NavLink 
-          to="/contact" 
-          className="hover:text-blue-400 transition duration-200">
-          Pågående projekt
+          <NavLink
+            to="/contact"
+            className="hover:text-blue-400 transition duration-200">
+            Pågående projekt
           </NavLink>
-          <NavLink 
-          to="/contact" 
-          className="hover:text-blue-400 transition duration-200">
-          LOGGIN
+          <NavLink
+            to="/contact"
+            className="hover:text-blue-400 transition duration-200">
+            LOGGIN
           </NavLink>
         </div>
         {/* Mobile Menu Button */}
